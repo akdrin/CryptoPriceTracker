@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3fe0c5;
+}
+
+.currency-select select, .buy-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.currency-select select {
+    background-color: #2a2a3b;
+    color: #fff;
+}
+
+.buy-btn {
+    background-color: #3fe0c5;
+    color: #000;
+    cursor: pointer;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.change-indicators, .percent-change {
+    text-align: center;
+    color: #3fe0c5;
+}
+
+.main-price h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-price p {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.price-table th, .price-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.price-table thead th {
+    background-color: #3b3b4f;
+    font-size: 18px;
+}
+
+.price-table tbody tr {
+    background-color: #2a2a3b;
+}
+
+.price-table tbody tr:nth-child(even) {
+    background-color: #242434;
+}
+
+.price-table tbody td {
+    border-bottom: 1px solid #3b3b4f;
+}
+
+.positive {
+    color: #3fe0c5;
+}
+
+.negative {
+    color: #e07c7c;
+}
+
+.footer {
+    text-align: center;
+}
+
+.add-to-home {
+    padding: 10px 20px;
+    background-color: #3fe0c5;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>HODLINFO</h1>
+            <div class="currency-select">
+                <select id="currency">
+                    <option value="INR">INR</option>
+                </select>
+                <select id="crypto">
+                    <option value="BTC">BTC</option>
+                </select>
+                <button class="buy-btn">BUY BTC</button>
+            </div>
+        </header>
+
+        <div class="price-section">
+            <div class="change-indicators">
+                <p>0.1 %<br>5 Mins</p>
+                <p>0.96 %<br>1 Hour</p>
+            </div>
+            <div class="main-price">
+                <h2 id="best-price">₹ --</h2>
+                <p>Best Price to Trade</p>
+            </div>
+            <div class="percent-change">
+                <p>2.73 %<br>1 Day</p>
+                <p>7.51 %<br>7 Days</p>
+            </div>
+        </div>
+
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody id="crypto-table-body">
+                <!-- Rows will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <button class="add-to-home">Add hodlinfo to home screen</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
